@@ -1,4 +1,4 @@
-# UrlTemplate
+# earl.js
 
 This is an initial draft of a project to allow you to extract values from URLs and create URLs from a template.
 
@@ -22,7 +22,7 @@ Currently, if you call `extract`, any query string parameters will be added to t
 If you call `format` with unmatched key/value pairs, the remaining pairs are added to the URL's query string.
 
 ## Upcoming Changes
-I would like to give the project a better name. I would also like to expose this library as a single function that returns a template. Writing `UrlTemplate.parse` is awkward and verbose.
+I would like to expose this library as a single function that returns a template. Writing `UrlTemplate.parse` is awkward and verbose.
 
 I plan on adding unit tests and automating builds using Node.js and either grunt.js or gulp.js.
 
