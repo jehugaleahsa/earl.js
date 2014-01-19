@@ -14,12 +14,12 @@ From here, you can extract the `customerId` value from an actual URL.
 	
 Or, you can generate a URL by passing an object.
 
-	var url = template.format({ customerId: 123 });
+	var url = template.expand({ customerId: 123 });
 	
 ## Query Strings
 Currently, if you call `extract`, any query string parameters will be added to the returned object. If there is a naming conflict, a path variable takes precedence over query string keys.
 
-If you call `format` with unmatched key/value pairs, the remaining pairs are added to the URL's query string.
+If you call `expand` with unmatched key/value pairs, the remaining pairs are added to the URL's query string.
 
 ## Upcoming Changes
 I plan on adding unit tests and automating builds using Node.js and either grunt.js or gulp.js.
