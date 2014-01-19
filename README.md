@@ -5,7 +5,7 @@ This is an initial draft of a project to allow you to extract values from URLs a
 ## Working with a Template
 Whether extracting values or creating URLs, you start with a URL template, using curly braces to indicate placeholders.
 
-    var template = UrlTemplate.parse('http://www.example.com/customers/{customerId}');
+    var template = earl('http://www.example.com/customers/{customerId}');
 	
 From here, you can extract the `customerId` value from an actual URL.
 
@@ -22,11 +22,7 @@ Currently, if you call `extract`, any query string parameters will be added to t
 If you call `format` with unmatched key/value pairs, the remaining pairs are added to the URL's query string.
 
 ## Upcoming Changes
-I would like to expose this library as a single function that returns a template. Writing `UrlTemplate.parse` is awkward and verbose.
-
 I plan on adding unit tests and automating builds using Node.js and either grunt.js or gulp.js.
-
-I plan on changing the code so that it doesn't add members to the global namespace.
 
 Eventually, I would like to add type annotations to placeholders. When `extract`-ing values, these would be used to perform automatic type conversion. The same annotations could be used during URL creation.
 
