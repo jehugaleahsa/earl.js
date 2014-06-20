@@ -28,5 +28,5 @@ Eventually, I would like to add type annotations to placeholders. When `extract`
 
 I might consider changing the code to deal with query strings explicitly. This would mean coming up with a notation. Query strings are a bit tricky because their order _shouldn't_ matter. I also don't want to require you to explicitly include `?` or `&` symbols. It should also be possible to mark some query string pairs as optional (or even specify default values).
 
-## Licence
-This project is based on code from the Node.js project. I add no additional licencing on top of Node.js, so simply refer to it's licence.
+## License
+This project is based on code from the Node.js project. I add no additional licensing on top of Node.js, so simply refer to it's license.
